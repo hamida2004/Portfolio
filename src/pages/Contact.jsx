@@ -2,16 +2,15 @@ import React from "react";
 import Nav from "../components/Nav";
 import Social from "../components/Social";
 import styled, { keyframes } from "styled-components";
-import image from "../assets/docs/CV_hamida_DADDA.pdf";
 import Button from "../components/Button";
 
 function Contact() {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/assets/your-document.pdf"; // Path to your PDF in the public folder
-    // You can specify a custom download name
-    link.click();
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = process.env.PUBLIC_URL + "/assets/your-document.pdf"; // Path to your PDF in the public folder
+  //   // You can specify a custom download name
+  //   link.click();
+  // };
   const SlideLeft = keyframes`
   from{
   transform : translateX(100%) translateY(20%);

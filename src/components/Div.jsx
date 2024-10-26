@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
-import TypingEffect from "./TypingEffect";
 import icon from "../assets/images/icon.png";
 import { Link } from "react-router-dom";
-import TiltDiv from "./TiltDiv";
 const Div = () => {
   // Styled Component for the div
   const SlideLeft = keyframes`
