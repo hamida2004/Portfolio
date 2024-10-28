@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../components/Nav";
 import Social from "../components/Social";
 import styled, { keyframes } from "styled-components";
 import Button from "../components/Button";
@@ -81,7 +80,6 @@ function Contact() {
 
   return (
     <Container>
-      <Nav />
       <H1>Get In Touch</H1>
       <Content>
         <H2>

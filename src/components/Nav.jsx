@@ -86,7 +86,8 @@ function Nav() {
 
         {/* Using a button for the scroll action */}
         <ScrollButton onClick={scrollDown}>Projects</ScrollButton>
-
+       
+        <A to="/testemonials">Testemonials</A>
         <A to="/contact">Contact</A>
       </Ul>
     </NavBar>

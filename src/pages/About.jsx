@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../components/Nav";
 import styled, { keyframes } from "styled-components";
 
 function About() {
@@ -54,7 +53,6 @@ function About() {
   `;
   return (
     <Container>
-      <Nav />
       <DivLeft>
         <H1>About</H1>
         <H2>

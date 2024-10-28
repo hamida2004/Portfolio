@@ -1,8 +1,7 @@
-import React from 'react'
-import Nav from '../components/Nav';
-import Div from '../components/Div';
-import styled from 'styled-components';
-import Projects from '../components/Projects';
+import React from "react";
+import Div from "../components/Div";
+import styled from "styled-components";
+import Projects from "../components/Projects";
 const Main = styled.div`
   display: flex;
   width: 100%;
@@ -11,18 +10,16 @@ const Main = styled.div`
   justify-content: center;
   position: relative;
   margin-top: 32px;
-
 `;
 function Home() {
   return (
     <>
-    <Main>
-      <Nav/>
-      <Div height={'84vh'} width={'84%'}/>
-    </Main>
-    <Projects />
+      <Main>
+        <Div height={"84vh"} width={"84%"} />
+      </Main>
+      <Projects />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -52,7 +52,8 @@ opacity:1;}
     animation: ${animation && fadeIn} linear;
     animation-timeline: view();
     cursor: pointer;
-
+   
+    
   `;
 
   return (
