@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.dd5d148f.css",
-    "main.js": "/Portfolio/static/js/main.b0b0f3f9.js",
+    "main.css": "/Portfolio/static/css/main.61fd2757.css",
+    "main.js": "/Portfolio/static/js/main.13bd3063.js",
     "static/media/image.png": "/Portfolio/static/media/image.5a3216180d985103bb23.png",
-    "static/media/CV_hamida_DADDA.pdf": "/Portfolio/static/media/CV_hamida_DADDA.212893f6cd4a7209cfe9.pdf",
-    "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio/index.html",
-    "main.dd5d148f.css.map": "/Portfolio/static/css/main.dd5d148f.css.map",
-    "main.b0b0f3f9.js.map": "/Portfolio/static/js/main.b0b0f3f9.js.map"
+    "main.61fd2757.css.map": "/Portfolio/static/css/main.61fd2757.css.map",
+    "main.13bd3063.js.map": "/Portfolio/static/js/main.13bd3063.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd5d148f.css",
-    "static/js/main.b0b0f3f9.js"
+    "static/css/main.61fd2757.css",
+    "static/js/main.13bd3063.js"
   ]
 }
