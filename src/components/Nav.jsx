@@ -82,10 +82,10 @@ function Nav() {
       </Link>
       <Ul>
         <A to="/">Home</A>
+        <ScrollButton onClick={scrollDown}>Projects</ScrollButton>
         <A to="/about">About</A>
 
         {/* Using a button for the scroll action */}
-        <ScrollButton onClick={scrollDown}>Projects</ScrollButton>
        
         <A to="/testemonials">Testemonials</A>
         <A to="/contact">Contact</A>
