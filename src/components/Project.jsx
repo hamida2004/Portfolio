@@ -1,8 +1,8 @@
 import React from "react";
 import TiltDiv from "../components/TiltDiv";
 import styled from "styled-components";
-import image from "../assets/images/image.png";
-function Project() {
+import { Link } from "react-router-dom";
+function Project({ to, image,name,type }) {
   const Top = styled.div`
     width: 100%;
     height: 80%;
@@ -16,7 +16,6 @@ function Project() {
     text-align: center;
   `;
   const Img = styled.img`
-    height: 80%;
     width: 80%;
   `;
   const H1 = styled.h1`
@@ -27,19 +26,25 @@ function Project() {
   `;
   const H2 = styled.h2`
     font-weight: 300;
-    color:#2b6afc;
+    color: #2b6afc;
     font-size: 20px;
   `;
   return (
-    <TiltDiv height={"520px"} width={"440px"} animation={true}>
-      <Top>
-        <Img src={image} />
-      </Top>
-      <Bottom>
-        <H1>Safe home</H1>
-        <H2>Design , Mobile</H2>
-      </Bottom>
-    </TiltDiv>
+    <Link
+    style={{
+      textDecoration:'none'
+    }}
+    to={to} >
+      <TiltDiv height={"520px"} width={"440px"} animation={true}>
+        <Top>
+          <Img src={image} />
+        </Top>
+        <Bottom>
+          <H1>{name}</H1>
+          <H2>{type}</H2>
+        </Bottom>
+      </TiltDiv>
+    </Link>
   );
 }
 

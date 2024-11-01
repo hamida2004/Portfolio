@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CategorieBtn from "./CategorieBtn";
 import Project from "./Project";
-
+import { projects } from "../assets/data/projects";
 function Projects() {
   const H1 = styled.h1`
     font-weight: 500;
@@ -37,15 +37,20 @@ function Projects() {
           alignItems: "center",
           flexWrap: "wrap",
           gap: 80,
+          marginBottom: 80
         }}
       >
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projects.map((element, index) => {
+          return (
+            <Project
+              key={index}
+              to={element.to}
+              image={element.image}
+              name={element.name}
+              type={element.type}
+            />
+          );
+        })}
       </div>
     </div>
   );

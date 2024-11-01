@@ -38,7 +38,7 @@ const A = styled(Link)`
   color: #f5fefb;
   padding: 4px 8px;
 
-  &:hover{
+  &:hover {
     color: rgb(43, 106, 252);
     transform: scale(1.1, 1);
   }
@@ -54,19 +54,15 @@ const ScrollButton = styled.button`
   text-decoration: none;
 
   &:hover {
-    color: rgb(43, 106, 252) ;
+    color: rgb(43, 106, 252);
     transform: scale(1.1, 1);
   }
 `;
 
 function Nav() {
   const navigate = useNavigate();
-
-  // Scrolls down after navigation to the homepage
   const scrollDown = () => {
-    navigate('/'); // First navigate to the home route
-
-    // Then scroll down after navigation
+    navigate("/");
     setTimeout(() => {
       window.scrollTo({
         top: window.scrollY + window.innerHeight + 40, // Scrolls down 2000px from the current scroll position
@@ -83,11 +79,8 @@ function Nav() {
       <Ul>
         <A to="/">Home</A>
         <ScrollButton onClick={scrollDown}>Projects</ScrollButton>
+        <A to="/testemonials">Testimonials</A>
         <A to="/about">About</A>
-
-        {/* Using a button for the scroll action */}
-       
-        <A to="/testemonials">Testemonials</A>
         <A to="/contact">Contact</A>
       </Ul>
     </NavBar>
