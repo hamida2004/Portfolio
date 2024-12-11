@@ -10,7 +10,7 @@ import CaseStudy from "./pages/CaseStudy";
 import bubblesCs from "./assets/images/bubblesCs.png";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
           element={<CaseStudy image={bubblesCs} />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
