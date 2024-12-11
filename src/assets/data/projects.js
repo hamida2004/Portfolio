@@ -2,7 +2,14 @@ import devAddict from "../images/devAddict.png";
 import safeHome from "../images/safeHome.png";
 import bubbles from "../images/bubbles.png";
 import Interior from "../images/Interior.png";
+import algpost from "../images/algposte.png"
 export const projects = [
+  {
+    to: "https://hamida2004.github.io/client_innovposte/",
+    image: algpost,
+    name: "AlG poste hakathon",
+    type: "Design, Web",
+  },
   {
     to: "https://hamida2004.github.io/devAddict/",
     image: devAddict,

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const Testemonial = () => {
+const Testemonial = ({name,content,image}) => {
   
   const SlideUp = keyframes`
   from{
@@ -12,14 +12,14 @@ const Testemonial = () => {
 
   }`
   const Container = styled.div`
-    height: 30%;
-    width: 40vh;
+    height: 70vh;
+    width: 30%;
     border-radius: 10px;
     background: linear-gradient(135deg, #04030b, rgba(43, 106, 252, 0.1));
     box-shadow: 1px 1px 10px rgba(43, 106, 252, 0.3);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     padding: 20px;
     transform: translateY(0%);
@@ -33,6 +33,7 @@ const Testemonial = () => {
   const Name = styled.p`
     font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom:20px
   `;
   const Crediantials = styled.div`
     display: flex;
@@ -45,18 +46,18 @@ const Testemonial = () => {
   return (
     <Container>
       <Crediantials>
-        <Img />
-        <Name>John Doe</Name>
+        <Img 
+        src={image}
+        />
+        <Name>{name}</Name>
       </Crediantials>
       <p
       style={{
         padding:10
       }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias et
-        atque doloribus neque, in porro ea culpa, provident dolore eaque aperiam
-        ipsa quas tempore, fugit consectetur! Incidunt placeat veniam quia!
-      </p>
+        {content}
+         </p>
     </Container>
   );
 };
