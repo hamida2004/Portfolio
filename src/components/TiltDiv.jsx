@@ -50,7 +50,7 @@ opacity:1;}
     color: #fff;
     text-align: center;
     animation: ${animation && fadeIn} linear;
-    animation-timeline: view();
+    // animation-timeline: view();
     cursor: pointer;
   `;
 
