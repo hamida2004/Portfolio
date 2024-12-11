@@ -30,11 +30,11 @@ function Project({ to, image,name,type }) {
     font-size: 20px;
   `;
   return (
-    <Link
+    <a
     style={{
       textDecoration:'none'
     }}
-    to={to} >
+    href={to} >
       <TiltDiv height={"520px"} width={"440px"} animation={true}>
         <Top>
           <Img src={image} />
@@ -44,7 +44,7 @@ function Project({ to, image,name,type }) {
           <H2>{type}</H2>
         </Bottom>
       </TiltDiv>
-    </Link>
+    </a>
   );
 }
 
