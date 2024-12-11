@@ -3,14 +3,14 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Testemonials from "./pages/Testemonials";
 import CaseStudy from "./pages/CaseStudy";
 import bubblesCs from "./assets/images/bubblesCs.png";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
           element={<CaseStudy image={bubblesCs} />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
