@@ -21,9 +21,8 @@ function Social() {
     justify-content: space-between;
     height: 60px;
     width: 25%;
+    gap:16px;
     margin: 40px 0px;
-    
-    
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;
   `;

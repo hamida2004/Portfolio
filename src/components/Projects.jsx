@@ -19,11 +19,12 @@ function Projects() {
       <H1>Projects</H1>
       <div
         style={{
-          width: "25%",
+          width: "fit-content",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           margin: "40px 0px",
+          gap:8
         }}
       >
         <CategorieBtn text={"Design"} />

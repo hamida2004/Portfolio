@@ -30,14 +30,28 @@ function About() {
     }
     `;
   const DivLeft = styled.div`
-    width: 40%;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 40px;
+     width: 40%;
+    min-width: 240px;
+    min-height: 30vh;
+    flex-wrap: wrap;
     transform: translateX(0%) translateY(0%);
     animation: ${SlideLeft} 1s ease;
   `;
   const DivRight = styled.div`
     width: 40%;
-    height: 30vh;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 40px;
+    min-height: 30vh;
+    flex-wrap: wrap;
     transform: translateX(0%) translateY(0%);
     animation: ${SlideRight} 1s ease;
   `;

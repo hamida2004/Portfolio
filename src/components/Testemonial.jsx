@@ -1,8 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const Testemonial = ({name,content,image}) => {
-  
+const Testemonial = ({ name, content, image }) => {
   const SlideUp = keyframes`
   from{
   transform : translateY(40%);
@@ -10,13 +9,15 @@ const Testemonial = ({name,content,image}) => {
   }to{
   transform : translateY(0%);
 
-  }`
+  }`;
   const Container = styled.div`
-    height: 70vh;
+    min-height: 80vh;
+    max-height: fit-content;
+    min-width: 240px;
     width: 30%;
     border-radius: 10px;
     background: linear-gradient(135deg, #04030b, rgba(43, 106, 252, 0.1));
-    box-shadow: 1px 1px 10px rgba(43, 106, 252, 0.3);
+    box-shadow: 1px 1px 10px #2b6afc;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -33,31 +34,28 @@ const Testemonial = ({name,content,image}) => {
   const Name = styled.p`
     font-size: 1.2rem;
     font-weight: 400;
-    margin-bottom:20px
   `;
   const Crediantials = styled.div`
     display: flex;
     align-items: center;
     justify-content: baseline;
     width: 100%;
-    margin: 20px 0px;
-    gap:20px
+    margin: 10px 0px 20px;
+    gap: 20px;
   `;
   return (
     <Container>
       <Crediantials>
-        <Img 
-        src={image}
-        />
+        <Img src={image} />
         <Name>{name}</Name>
       </Crediantials>
       <p
-      style={{
-        padding:10
-      }}
+        style={{
+          padding: 10,
+        }}
       >
         {content}
-         </p>
+      </p>
     </Container>
   );
 };

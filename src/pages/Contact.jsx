@@ -39,8 +39,8 @@ function Contact() {
     font-weight: 300;
     color: rgba(245, 254, 251, 0.7);
     width: 60%;
-    
-    
+    min-width: 400px;
+    max-width:fit-content;
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;
   `;
@@ -75,6 +75,8 @@ function Contact() {
     height: fit-content;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
     justify-content: space-between;
   `;
 
