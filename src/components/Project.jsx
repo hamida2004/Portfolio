@@ -2,7 +2,7 @@ import React from "react";
 import TiltDiv from "../components/TiltDiv";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-function Project({ to, image,name,type }) {
+function Project({ to, image, name, type }) {
   const Top = styled.div`
     width: 100%;
     height: 80%;
@@ -18,6 +18,11 @@ function Project({ to, image,name,type }) {
   const Img = styled.img`
     width: 80%;
   `;
+  const isExternal = to.startsWith("http");
+  const RLink = isExternal ? styled.a`` : styled(Link)``;
+  const StyledLink = styled(RLink)`
+    text-decoration: none;
+  `;
   const H1 = styled.h1`
     font-weight: 500;
     display: inline-block;
@@ -29,12 +34,9 @@ function Project({ to, image,name,type }) {
     color: #2b6afc;
     font-size: 20px;
   `;
+
   return (
-    <a
-    style={{
-      textDecoration:'none'
-    }}
-    href={to} >
+    <StyledLink to={to} href={to}>
       <TiltDiv height={"520px"} width={"440px"} animation={true}>
         <Top>
           <Img src={image} />
@@ -44,7 +46,7 @@ function Project({ to, image,name,type }) {
           <H2>{type}</H2>
         </Bottom>
       </TiltDiv>
-    </a>
+    </StyledLink>
   );
 }
 

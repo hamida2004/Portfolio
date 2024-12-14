@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import logo from "../assets/images/logo.png";
 import { Link, useNavigate } from "react-router-dom";
+import { BsList } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 
 const NavBar = styled.div`
   width: 100%;
@@ -14,7 +16,11 @@ const NavBar = styled.div`
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.7); /* Add some background for clarity */
+  background-color: rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 const Image = styled.img`
@@ -31,6 +37,20 @@ const Ul = styled.ul`
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
+  }
 `;
 
 const A = styled(Link)`
@@ -60,28 +80,74 @@ const ScrollButton = styled.button`
 `;
 
 function Nav() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+
   const scrollDown = () => {
     navigate("/");
     setTimeout(() => {
       window.scrollTo({
-        top: window.scrollY + window.innerHeight + 40, // Scrolls down 2000px from the current scroll position
-        behavior: "smooth", // Smooth scrolling
+        top: window.scrollY + window.innerHeight + 40,
+        behavior: "smooth",
       });
-    }, 100); // Wait for the navigation to happen first
+    }, 100);
   };
+
+  // Update `isMobile` state on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <NavBar>
       <Link to="/">
         <Image src={logo} alt="logo" />
       </Link>
-      <Ul>
-        <A to="/">Home</A>
-        <ScrollButton onClick={scrollDown}>Projects</ScrollButton>
-        <A to="/testemonials">Testimonials</A>
-        <A to="/about">About</A>
-        <A to="/contact">Contact</A>
+      {isMobile && !isMenuOpen && (
+        <BsList
+          color="rgb(43, 106, 252)"
+          size={40}
+          style={{ cursor: "pointer" }}
+          onClick={() => setIsMenuOpen(true)}
+        />
+      )}
+      {isMobile && isMenuOpen && (
+        <IoClose
+          color="rgb(43, 106, 252)"
+          size={40}
+          style={{ cursor: "pointer" }}
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+      <Ul isMenuOpen={isMenuOpen}>
+        <A to="/" onClick={() => setIsMenuOpen(false)}>
+          Home
+        </A>
+        <ScrollButton onClick={() => {
+          scrollDown();
+          setIsMenuOpen(false);
+        }}>
+          Projects
+        </ScrollButton>
+        <A to="/testimonials" onClick={() => setIsMenuOpen(false)}>
+          Testimonials
+        </A>
+        <A to="/about" onClick={() => setIsMenuOpen(false)}>
+          About
+        </A>
+        <A to="/contact" onClick={() => setIsMenuOpen(false)}>
+          Contact
+        </A>
       </Ul>
     </NavBar>
   );

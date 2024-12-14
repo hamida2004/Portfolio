@@ -38,19 +38,16 @@ function Social() {
   `;
   return (
     <Div>
-      <StyledLink target="_blank">
+      <StyledLink target="_blank" to={'https://web.facebook.com/profile.php?id=100067478614667'}>
         <FaFacebook size={32} color="#054df5"/>
       </StyledLink>
-      <StyledLink target="_blank" to={'https://www.instagram.com/devaddict2024/#'}>
+      <StyledLink target="_blank" to={'https://www.instagram.com/_peace.girl.20_/'}>
         <FaInstagram size={32} color="#054df5"/>
       </StyledLink>
-      <StyledLink target="_blank" to={"https://x.com/Addict2000Dev"}>
+      <StyledLink target="_blank" to={"https://x.com/DaddaHamid40259"}>
         <FaTwitter size={32} color="#054df5"/>
       </StyledLink>
 
-      <StyledLink target="_blank" to={'https://www.tiktok.com/@dev2000addict'}>
-        <FaTiktok size={32} color="#054df5"/>
-      </StyledLink>
     </Div>
   );
 }

@@ -4,12 +4,24 @@ import styled, { keyframes } from "styled-components";
 import Button from "../components/Button";
 
 function Contact() {
-  // const handleDownload = () => {
-  //   const link = document.createElement("a");
-  //   link.href = process.env.PUBLIC_URL + "/assets/your-document.pdf"; // Path to your PDF in the public folder
-  //   // You can specify a custom download name
-  //   link.click();
-  // };
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/assets/docs/CV_hamida_DADDA.pdf`;
+    link.download = "CV_hamida_DADDA.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
+  const handleMail = () => {
+    const email = "hamida2004dadda@gmail.com";
+
+    // Construct the mailto URL
+    const mailtoUrl = `mailto:${email}`;
+
+    // Open the mailto link
+    window.location.href = mailtoUrl;
+  };
   const SlideLeft = keyframes`
   from{
   transform : translateX(100%) translateY(20%);
@@ -40,7 +52,7 @@ function Contact() {
     color: rgba(245, 254, 251, 0.7);
     width: 60%;
     min-width: 400px;
-    max-width:fit-content;
+    max-width: fit-content;
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;
   `;
@@ -89,7 +101,12 @@ function Contact() {
           together to bring your ideas to life with high-quality, tailored
           services.
         </H2>
-        <Div>
+        <Div
+          style={{
+            maxWidth: "90%",
+            flexWrap: "wrap",
+          }}
+        >
           <Button
             text={"Download CV"}
             style={{
@@ -97,12 +114,14 @@ function Contact() {
               background: "#f5fefb",
               fontSize: 20,
             }}
+            onclick={handleDownload}
           />
           <Button
             text={"Contact"}
             style={{
               fontSize: 20,
             }}
+            onclick={handleMail}
           />
         </Div>
       </Content>
