@@ -24,7 +24,7 @@ function Projects() {
           justifyContent: "space-between",
           alignItems: "center",
           margin: "40px 0px",
-          gap:8
+          gap: 8
         }}
       >
         <CategorieBtn text={"Design"} />
@@ -44,7 +44,8 @@ function Projects() {
         {projects.map((element, index) => {
           return (
             <Project
-              key={index}
+              key={element.id}
+              id={element.id}
               to={element.to}
               image={element.image}
               name={element.name}

@@ -2,7 +2,7 @@ import React from "react";
 import TiltDiv from "../components/TiltDiv";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-function Project({ to, image, name, type }) {
+function Project({id, to, image, name, type }) {
   const Top = styled.div`
     width: 100%;
     height: 80%;
@@ -36,7 +36,7 @@ function Project({ to, image, name, type }) {
   `;
 
   return (
-    <StyledLink to={to} href={to}>
+    <StyledLink to={to} href={to} id={id}>
       <TiltDiv height={"520px"} width={"440px"} animation={true}>
         <Top>
           <Img src={image} />
