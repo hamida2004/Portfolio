@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.61fd2757.css",
-    "main.js": "/Portfolio/static/js/main.444f1289.js",
+    "main.js": "/Portfolio/static/js/main.db2d7830.js",
     "static/media/MusalahCs.png": "/Portfolio/static/media/MusalahCs.cfae1b918c53bfac02f0.png",
     "static/media/Interior.png": "/Portfolio/static/media/Interior.312462c9dd155bc4bdb7.png",
     "static/media/bubblesCs.png": "/Portfolio/static/media/bubblesCs.72650fdd9979f0f22622.png",
@@ -10,14 +10,15 @@
     "static/media/algposte.png": "/Portfolio/static/media/algposte.60248aa19856d27223c8.png",
     "static/media/bubbles.png": "/Portfolio/static/media/bubbles.763f7c21c81ace9293e0.png",
     "static/media/safia.jpg": "/Portfolio/static/media/safia.bf2f995bb5f27a8fe1ae.jpg",
+    "static/media/medhub.png": "/Portfolio/static/media/medhub.b1dc59c0cacafa6755bc.png",
     "static/media/devAddict.png": "/Portfolio/static/media/devAddict.7b0d00ec009cd4b7534c.png",
     "static/media/zinou.jpg": "/Portfolio/static/media/zinou.69e85f8fa04a87f67b6e.jpg",
     "index.html": "/Portfolio/index.html",
     "main.61fd2757.css.map": "/Portfolio/static/css/main.61fd2757.css.map",
-    "main.444f1289.js.map": "/Portfolio/static/js/main.444f1289.js.map"
+    "main.db2d7830.js.map": "/Portfolio/static/js/main.db2d7830.js.map"
   },
   "entrypoints": [
     "static/css/main.61fd2757.css",
-    "static/js/main.444f1289.js"
+    "static/js/main.db2d7830.js"
   ]
 }
