@@ -65,6 +65,42 @@ export const studycases = [
             outcome: "Musalah successfully enhances the organization of Quran sessions within university residences, allowing teachers and students to efficiently plan, track, and stay connected with their learning progress and activities in the prayer area."
         }
     }
+,
+{
+    "id": 7,
+    "info": {
+        "link":'https://hamida2004.github.io/medhub/',
+        "title": "MidHub – A Collaborative Study Resource Platform",
+        "overview": "MidHub is a dedicated platform designed to facilitate the sharing of high-quality study resources among Algerian students in the fields of Medicine, Pharmacy, and Dental studies. By leveraging Google Drive integration, MidHub ensures a seamless and organized way for students to access verified educational materials.",
+        "problemStatement": "Many students struggle to find reliable study materials, leading to inefficient learning and redundant efforts in gathering resources. Existing platforms either lack proper quality control or are overloaded with unnecessary features like forums and discussions. MidHub aims to solve this by providing a simple, well-organized, and verified repository of academic documents.",
+        "objectives": [
+            "Create a centralized and structured platform for sharing academic resources.",
+            "Ensure quality control by manually verifying all shared materials before publication.",
+            "Simplify access to study resources without unnecessary distractions like forums or discussions.",
+            "Provide an easy-to-use and lightweight platform with Google Drive integration.",
+            "Cater specifically to Algerian students in Medicine, Pharmacy, and Dental studies."
+        ],
+        "features": {
+            "resourceSharing": "A structured repository categorized by specialization and study year.",
+            "manualVerification": "All documents are reviewed before being published to ensure quality and reliability.",
+            "googleDriveIntegration": "Users can access shared resources directly from Google Drive, ensuring easy storage and retrieval.",
+            "streamlinedAccess": "A simple, distraction-free interface focused solely on study materials.",
+            "specializationCategorization": "Resources are organized by academic field (Medicine, Pharmacy, Dental) and study level."
+        },
+        "technologiesUsed": [
+            "React for the front-end web interface.",
+            "Firebase for authentication and data management.",
+            "Google Drive API for document storage and retrieval.",
+            "Node.js for backend services (if applicable)."
+        ],
+        "challenges": [
+            "Ensuring a balance between ease of access and document verification.",
+            "Keeping the platform lightweight while integrating Google Drive efficiently.",
+            "Maintaining high-quality standards for uploaded content without slowing down the process."
+        ],
+        "outcome": "MidHub provides a highly efficient, well-organized, and distraction-free platform for Algerian medical students to access quality study materials. The manual verification system ensures content reliability, making it a trusted academic resource."
+    }
+}
 
 
 ]

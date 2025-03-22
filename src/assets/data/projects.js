@@ -3,7 +3,8 @@ import safeHome from "../images/safeHome.png";
 import bubbles from "../images/bubbles.png";
 import  musalah from "../images/musalah.png";
 import Interior from "../images/Interior.png";
-import algpost from "../images/algposte.png"
+import algpost from "../images/algposte.png";
+import medhub from "../images/medhub.png";
 export const projects = [
   {
     id: 1,
@@ -49,6 +50,13 @@ export const projects = [
     image: musalah,
     name: "Musalah",
     type: "Design, Mobile",
+  },
+  {
+    id: 7,
+    to: "/studycase/medhub",
+    image: medhub,
+    name: "Medhub",
+    type: "Design, web",
   },
 
 ];

@@ -9,6 +9,7 @@ import Testemonials from "./pages/Testemonials";
 import CaseStudy from "./pages/CaseStudy";
 import bubblesCs from "./assets/images/bubblesCs.png";
 import MusalahCs from "./assets/images/MusalahCs.png";
+import medhub from "./assets/images/medhub.png";
 function App() {
   return (
     <HashRouter>
@@ -25,6 +26,10 @@ function App() {
         <Route
           path="/studycase/musalah"
           element={<CaseStudy image={MusalahCs} id={6} />}
+        />
+        <Route
+          path="/studycase/medhub"
+          element={<CaseStudy image={medhub} id={7} />}
         />
       </Routes>
     </HashRouter>
