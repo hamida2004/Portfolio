@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
 
 import React from "react";
 import styled, { keyframes } from "styled-components";
@@ -21,7 +21,7 @@ function Social() {
     justify-content: space-between;
     height: 60px;
     width: 25%;
-    gap:16px;
+    gap:20px;
     margin: 40px 0px;
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;

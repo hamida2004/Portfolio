@@ -11,8 +11,7 @@ const Testemonial = ({ name, content, image }) => {
 
   }`;
   const Container = styled.div`
-    min-height: 80vh;
-    max-height: fit-content;
+    height: 80vh;
     min-width: 240px;
     width: 30%;
     border-radius: 10px;
@@ -25,6 +24,10 @@ const Testemonial = ({ name, content, image }) => {
     padding: 20px;
     transform: translateY(0%);
     animation: ${SlideUp} 1s ease;
+    @media (max-width: 768px) {
+      width: 90%;
+      height: fit-content;
+    }
   `;
   const Img = styled.img`
     height: 40px;

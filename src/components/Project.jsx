@@ -22,6 +22,10 @@ function Project({id, to, image, name, type }) {
   const RLink = isExternal ? styled.a`` : styled(Link)``;
   const StyledLink = styled(RLink)`
     text-decoration: none;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 20px;
   `;
   const H1 = styled.h1`
     font-weight: 500;

@@ -45,8 +45,26 @@ function About() {
   const H2 = styled.h2`
     font-weight: 300;
     color: rgba(245, 254, 251, 0.7);
-    margin-bottom: 40px;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+
+  
   `;
+  const Cycle = styled.h2`
+  @media (max-width: 768px) {
+  font-size: 1.2rem;
+  }
+  `
+  const Year = styled.h2`
+  font-weight: 300;
+  @media (max-width: 768px) {
+  font-size: 1rem;
+  }
+  `
   const SlideLeft = keyframes`
     from{
     transform : translateX(100%) translateY(20%);
@@ -69,13 +87,15 @@ function About() {
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     width: 60%;
     min-width: 240px;
     min-height: 30vh;
     flex-wrap: wrap;
     transform: translateX(0%) translateY(0%);
     animation: ${SlideLeft} 1s ease;
+    @media (max-width: 768px) {
+      width: 100%;}
   `;
   const DivRight = styled.div`
     width: 40%;
@@ -97,7 +117,31 @@ function About() {
     gap: 40px;
     flex-wrap: wrap;
     position: relative;
+    @media (max-width: 768px) {
+      padding: 40px;
+      padding-top: 60px;
+      justify-content: center;
   `;
+  const Div = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: baseline;
+    }
+  `;
+  const DIV = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    height: 80vh;
+  @media (max-width: 768px) {
+  height: 40vh;
+  }
+  `
   return (
     <Container>
       <DivLeft>
@@ -119,12 +163,8 @@ function About() {
         }}
       >
         <H1>Education</H1>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            height: "80vh",
-          }}
+        <DIV
+        
         >
           <EduLeft
             style={{
@@ -135,17 +175,12 @@ function About() {
               gap: 20,
             }}
           >
-            <div
-              style={{
-                width: "100%",
-                alignItems: "center",
-                justifyContent: "space-between",
-                display: "flex",
-              }}
+            <Div
+            
             >
-              <h2>higher Cycle ESI-SBA</h2>
-              <h3>2023-Now</h3>
-            </div>
+              <Cycle>higher Cycle ESI-SBA</Cycle>
+              <Year>2023-Now</Year>
+            </Div>
             <H2>higher school in computer science Sidi Bel Abess</H2>
           </EduLeft>
           <div
@@ -172,20 +207,15 @@ function About() {
               alignSelf: "end",
             }}
           >
-            <div
-              style={{
-                width: "100%",
-                alignItems: "center",
-                justifyContent: "space-between",
-                display: "flex",
-              }}
+            <Div
+              
             >
-              <h2>Preparatory Cycle ESI-SBA</h2>
-              <h3> 2021-2023</h3>
-            </div>
+              <Cycle>Preparatory Cycle ESI-SBA</Cycle>
+              <Year> 2021-2023</Year>
+            </Div>
             <H2>higher school in computer science Sidi Bel Abess</H2>
           </EduRight>
-        </div>
+        </DIV>
       </DivRight>
       <DivLeft
       style={{
@@ -207,31 +237,31 @@ function About() {
           }}
         >
           <FaJs size={60}  color="yellow"    style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaReact size={60}  color="#2b6afc"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaNodeJs size={60}  color="green"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaGithub size={60}  color="grey"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaFigma size={60}  color="purple"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaCss3 size={60}  color="blue"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
           <FaHtml5 size={60}  color="orange"  style={{
-            margin:40,
+            margin:20,
             cursor:"pointer"
           }}/>
         </div>

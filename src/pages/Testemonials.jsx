@@ -18,6 +18,9 @@ const Testemonials = () => {
     margin: 60px 0px;
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;
+    @media (max-width: 768px) {
+      margin: 40px 0px;
+    }
   `;
   return (
     <div

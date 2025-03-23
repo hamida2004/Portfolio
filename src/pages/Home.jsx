@@ -10,6 +10,11 @@ const Main = styled.div`
   justify-content: center;
   position: relative;
   margin-top: 32px;
+  @media (max-width: 768px) {
+    height: fit-content;
+    padding: 20px;
+  }
+ 
 `;
 function Home() {
   return (

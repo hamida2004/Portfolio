@@ -17,7 +17,6 @@ const NavBar = styled.div`
   top: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.7);
-
   @media (max-width: 768px) {
     justify-content: space-between;
   }
@@ -29,6 +28,9 @@ const Image = styled.img`
   top: 20px;
   left: 20px;
   z-index: 3;
+
+  @media (max-width: 768px) {
+  position: static;}
 `;
 
 const Ul = styled.ul`

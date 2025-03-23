@@ -2,7 +2,6 @@ import devAddict from "../images/devAddict.png";
 import safeHome from "../images/safeHome.png";
 import bubbles from "../images/bubbles.png";
 import  musalah from "../images/musalah.png";
-import Interior from "../images/Interior.png";
 import algpost from "../images/algposte.png";
 import medhub from "../images/medhub.png";
 export const projects = [
@@ -36,13 +35,6 @@ export const projects = [
     name: "bubbles(chat app)",
     type: "Design, Mobile",
 
-  },
-  {
-    id: 5,
-    to: "https://hamida2004.github.io/interior/",
-    image: Interior,
-    name: "Interior",
-    type: "Web",
   },
   {
     id: 6,

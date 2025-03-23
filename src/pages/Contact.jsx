@@ -60,8 +60,7 @@ function Contact() {
   const Div = styled.div`
   font-weight: 300;
   color: rgba(245, 254, 251, 0.7);
-  width: 40%,
-  height:400px;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,6 +69,11 @@ function Contact() {
     
     transform: translateX(0%);
     animation: ${SlideLeft} 1s ease;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100px;
+      gap: 20px;
+    }
 `;
   const Container = styled.div`
     width: 100%;
@@ -81,6 +85,10 @@ function Contact() {
     gap: 40px;
     padding: 80px;
     margin-top: 120px;
+    @media (max-width: 768px) {
+      padding: 20px;
+      padding-top: 40px;
+    }
   `;
   const Content = styled.div`
     width: 100%;
@@ -112,14 +120,13 @@ function Contact() {
             style={{
               color: "#054df5",
               background: "#f5fefb",
-              fontSize: 20,
+              
             }}
             onclick={handleDownload}
           />
           <Button
             text={"Contact"}
             style={{
-              fontSize: 20,
             }}
             onclick={handleMail}
           />

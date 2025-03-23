@@ -16,7 +16,7 @@ function Button({ text, handleClick, style }) {
   const GradientButton = styled.button`
 width: 200px;
 padding: 8px 12px; /* Button padding */
-font-size: 1.6rem; /* Font size */
+font-size: 1.4rem; /* Font size */
 color: white; /* Text color */
 border: none; /* Remove default border */
 border-radius: 16px; /* Rounded corners */
@@ -37,6 +37,12 @@ box-shadow: 1px 1px 4px #054df5;
 
 &:active {
   transform: scale(0.95); /* Slightly scale down when clicked */
+}
+
+@media (max-width: 768px) {
+width: 45%;
+font-size: 1.2rem;
+padding: 8px 12px;
 }
 `;
   return <GradientButton

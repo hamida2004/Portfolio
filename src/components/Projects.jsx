@@ -9,12 +9,19 @@ function Projects() {
     display: inline-block;
     color: rgba(245, 254, 251, 0.9);
   `;
+
+  const Div = styled.div`
+  margin-top: 120px;
+  padding: 0 80px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  `; 
   return (
-    <div
-      style={{
-        marginTop: 120,
-        padding: "0px 80px",
-      }}
+    <Div
+      
     >
       <H1>Projects</H1>
       <div
@@ -54,7 +61,7 @@ function Projects() {
           );
         })}
       </div>
-    </div>
+    </Div>
   );
 }
 

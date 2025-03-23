@@ -37,13 +37,21 @@ const Div = () => {
     font-size: 3.2rem;
     transform: translateX(0%);
     animation: ${SlideLeft} 1s ease;
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   `;
   const H2 = styled.h2`
     font-weight: 300;
     color: rgba(245, 254, 251, 0.7);
     font-size: 1.8rem;
     transform: translateX(0%);
+    width: 60%;
     animation: ${SlideRight} 1s ease;
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+      width: 100%;
+    }
   `;
   const pulse = keyframes`
   0% {
@@ -73,12 +81,15 @@ const Div = () => {
   const Container = styled.div`
     width: 100%;
     padding: 80px;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
     gap: 20px;
+    @media (max-width: 768px) {
+      padding: 20px;
+      padding-top: 40px;
+    }
   `;
   const scrollDown = () => {
     window.scrollTo({
@@ -94,18 +105,16 @@ const Div = () => {
       <Container>
         <H2>Hi there</H2>
         <H1>here is Hamida</H1>
-        <h2
+        <H2
           style={{
             color: "#2b6afc",
             fontWeight: 400,
           }}
         >
           Full-stack developer | Problem-solver | UI/UX Enthusiast
-        </h2>
+        </H2>
         <H2
-        style={{
-          width:'60%'
-        }}
+       
         >
           web and mobile developer who loves turning ideas into functional,
           user-friendly apps and designs.

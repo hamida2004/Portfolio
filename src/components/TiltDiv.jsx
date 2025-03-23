@@ -51,6 +51,10 @@ opacity:1;}
     text-align: center;
     animation: ${animation && fadeIn} linear;
     cursor: pointer;
+     @media (max-width: 768px) {
+    width: 90%;
+    height: 400px;
+    }
   `;
 
   return (
