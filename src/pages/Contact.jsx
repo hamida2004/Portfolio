@@ -55,6 +55,10 @@ function Contact() {
     max-width: fit-content;
     transform: translateX(0%);
     animation: ${SlideRight} 1s ease;
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+      width: 100%;
+    }
   `;
 
   const Div = styled.div`
