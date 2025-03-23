@@ -19,6 +19,7 @@ const NavBar = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   @media (max-width: 768px) {
     justify-content: space-between;
+    width: 100vw;
   }
 `;
 
