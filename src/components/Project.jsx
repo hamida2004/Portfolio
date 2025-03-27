@@ -2,7 +2,9 @@ import React from "react";
 import TiltDiv from "../components/TiltDiv";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-function Project({id, to, image, name, type }) {
+import { FaGithub } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+function Project({ id, to, image, name, type, github, figma }) {
   const Top = styled.div`
     width: 100%;
     height: 80%;
@@ -39,9 +41,50 @@ function Project({id, to, image, name, type }) {
     font-size: 20px;
   `;
 
+  const Header = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left:auto;
+  padding: 20px;
+  `
+
+  const Icon = styled.a`
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #2b6afc;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  `
+
   return (
     <StyledLink to={to} href={to} id={id}>
       <TiltDiv height={"520px"} width={"440px"} animation={true}>
+        <Header>
+          <Icon href={github} target="_blank">
+            <FaGithub
+              size={24}
+              color="#2b6afc"
+            />
+
+          </Icon>
+          <Icon href={figma} target="_blank">
+
+            <FaFigma
+              size={24}
+              color="#2b6afc"
+            />
+          </Icon>
+
+        </Header>
         <Top>
           <Img src={image} />
         </Top>

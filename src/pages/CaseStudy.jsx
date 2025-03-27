@@ -1,82 +1,3 @@
-// import React from "react";
-// import styled, { keyframes } from "styled-components";
-
-// const CaseStudy = ({ image }) => {
-//   const fadeIn = keyframes`
-//   from{
-//   scale: 0.9;
-//   opacity:0;
-//   }
-//   to{
-//   scale: 1;
-//   opacity:1;}
-//   `;
-//   const Div = styled.div`
-//     width: 100%;
-//     height: 100vh;
-//     display: flex;
-//     align-items: center;
-//     gap: 80px;
-//     margin: 120px 0px;
-//     animation: ${fadeIn} linear;
-//     animation-timeline: view();
-//   `;
-//   const Img = styled.img`
-//     width: 100%;
-//   `;
-//   const Content = styled.div`
-//     padding: 120px;
-//     display: flex;
-//     align-items: baseline;
-
-//     gap: 80px;
-//     flex-direction: column;
-//     width: 100%;
-//     height: 80vh;
-//     animation: ${fadeIn} linear;
-//     animation-timeline: view();
-//   `;
-//   const H1 = styled.h1`
-//     font-weight: 500;
-//     display: inline-block;
-//     color: rgba(245, 254, 251, 0.9);
-//   `;
-//   const P = styled.p``;
-//   return (
-//     <>
-//       <Content>
-//         <H1>Breif :</H1>
-//       </Content>
-//       <Content>
-//         <H1>Problem solved</H1>
-//         <P>
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem
-//           excepturi sint est vitae saepe perferendis iusto. Labore officiis
-//           aliquam sint reiciendis, placeat dignissimos iste ipsam, ducimus
-//           dolorem, quia vel.
-//         </P>
-//       </Content>
-//       <Content>
-//         <H1>Features</H1>
-//       </Content>
-//       <Div>
-//         <Img src={image} alt="design" />
-//       </Div>
-//       <Content>
-//         <H1>Design</H1>
-//       </Content>
-//       <Content>
-//         <H1>Implementation</H1>
-//       </Content>
-//       <Content>
-//         <H1>Users' reviews :</H1>
-//       </Content>
-//     </>
-//   );
-// };
-
-// export default CaseStudy;
-
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { studycases } from "../assets/data/studcases";
@@ -106,13 +27,19 @@ const CaseStudy = ({ image, id }) => {
       margin: 120px 0px;
       animation: ${fadeIn} linear;
       animation-timeline: view();
+
+      @media (max-width: 768px) {
+      
+      height: 200px;
+
+      }
     `;
   const Img = styled.img`
       width: 100%;
       height: 100%;
+      resize-mode: cover;
     `;
   const Content = styled.div`
-      padding: 120px;
       display: flex;
       align-items: baseline;
   
@@ -122,14 +49,28 @@ const CaseStudy = ({ image, id }) => {
       height: 80vh;
       animation: ${fadeIn} linear;
       animation-timeline: view();
+
+      @media (max-width: 768px) {
+      gap: 40px;
+      height: fit-content;
+      padding: 20px 0px;
+      }
     `;
   const H1 = styled.h1`
       font-weight: 500;
       display: inline-block;
       color: rgba(245, 254, 251, 0.9);
+      @media (max-width: 768px) {
+      font-size: 1.8rem;
+      
+      }
     `;
   const P = styled.p`
-    font-size:1.2rem
+    font-size:1.2rem;
+
+    @media (max-width: 768px) {
+    font-size: 1rem;
+    }
     `;
   const Ul = styled.ul`
     font-size:1.2rem
@@ -150,6 +91,7 @@ const CaseStudy = ({ image, id }) => {
    }
  `;
   const Btn = styled.a`
+  
   width: 200px;
   padding: 8px 12px; /* Button padding */
   font-size: 1.6rem; /* Font size */
@@ -171,6 +113,14 @@ const CaseStudy = ({ image, id }) => {
   animation: ${gradientAnimation} 5s ease infinite; /* Apply animation */
   transition: transform 0.3s ease; /* Smooth transform transition */
   font-size: 1.8 rem;
+  height:60px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    padding: 8px 12px; /* Button padding */
+    font-size: 1.2rem; /* Font size */
+    height: 40px;
+  }
   &:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
   }
@@ -180,9 +130,19 @@ const CaseStudy = ({ image, id }) => {
     transform: scale(0.95); /* Slightly scale down when clicked */
   }
 `;
+const Container = styled.div`
+padding: 120px;
+
+@media (max-width: 768px) {
+padding: 20px;
+padding-top: 60px;
+}
+`
+
   return (
-    <>
+    <Container>
       <Content>
+      
         <H1>{info.title}</H1>
         <P>{info.overview}</P>
         {info.link && <Btn href={info.link}>Live Demo</Btn>}
@@ -243,7 +203,7 @@ const CaseStudy = ({ image, id }) => {
       </Content>
 
 
-    </>
+    </Container>
   );
 };
 

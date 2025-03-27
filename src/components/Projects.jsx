@@ -57,6 +57,8 @@ function Projects() {
               image={element.image}
               name={element.name}
               type={element.type}
+              github={element.github}
+              figma={element.figma}
             />
           );
         })}

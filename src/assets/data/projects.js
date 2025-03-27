@@ -1,7 +1,7 @@
 import devAddict from "../images/devAddict.png";
 import safeHome from "../images/safeHome.png";
 import bubbles from "../images/bubbles.png";
-import  musalah from "../images/musalah.png";
+import musalah from "../images/musalah.png";
 import algpost from "../images/algposte.png";
 import medhub from "../images/medhub.png";
 export const projects = [
@@ -11,6 +11,8 @@ export const projects = [
     image: algpost,
     name: "AlG poste hakathon",
     type: "Design, Web",
+    github: "https://github.com/hamida2004/AlgPoste",
+    figma: "https://www.figma.com/design/GqzpOLD3z17fS8zJ8IcFKz/alg_post_innovposte?node-id=0-1&p=f&t=bMEyiwMVrbujLX2N-0"
   },
   {
     id: 2,
@@ -19,6 +21,8 @@ export const projects = [
     image: devAddict,
     name: "Dev Addict",
     type: "Design, Web",
+    github: "https://github.com/hamida2004/devAddict",
+    figma: "https://www.figma.com/design/mBi85XfZHT0Z4qXrh47US5/Dev-Addict?t=A7mEtrKMvbkycumo-0"
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ export const projects = [
     image: safeHome,
     name: "Safe Home",
     type: "Design, Mobile",
+    github: "https://github.com/hamida2004/safe_home",
+    figma: "https://www.figma.com/proto/RGlGYk7ZyUWce8r1qGVcjK/internship-project?node-id=0-1&fuid=1206169402777696177"
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const projects = [
     image: bubbles,
     name: "bubbles(chat app)",
     type: "Design, Mobile",
+    github: "https://hamida2004.github.io/Portfolio/#/studycase/bubbles",
+    figma: "https://www.figma.com/design/QKsrfPl3eWqfYhe8UP3UwN/bubbles?t=A7mEtrKMvbkycumo-0"
 
   },
   {
@@ -42,6 +50,8 @@ export const projects = [
     image: musalah,
     name: "Musalah",
     type: "Design, Mobile",
+    github: "https://github.com/hamida2004/musalah",
+    figma: "https://www.figma.com/design/MjqQHZ5PjDz7lfsk868igK/Musalah?t=A7mEtrKMvbkycumo-0"
   },
   {
     id: 7,
@@ -49,6 +59,8 @@ export const projects = [
     image: medhub,
     name: "Medhub",
     type: "Design, web",
+    github: "https://github.com/hamida2004/medhub",
+    figma: "https://www.figma.com/design/Dr3Bvq2OpMNDXhWlukxxe5/midhub?t=A7mEtrKMvbkycumo-0"
   },
 
 ];
