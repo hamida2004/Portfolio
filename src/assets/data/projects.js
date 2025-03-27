@@ -10,27 +10,25 @@ export const projects = [
     to: "https://hamida2004.github.io/client_innovposte/",
     image: algpost,
     name: "AlG poste hakathon",
-    type: "Design, Web",
+    type: ["Design", "Web"],
     github: "https://github.com/hamida2004/AlgPoste",
     figma: "https://www.figma.com/design/GqzpOLD3z17fS8zJ8IcFKz/alg_post_innovposte?node-id=0-1&p=f&t=bMEyiwMVrbujLX2N-0"
   },
   {
     id: 2,
-
     to: "https://hamida2004.github.io/devAddict/",
     image: devAddict,
     name: "Dev Addict",
-    type: "Design, Web",
+    type: ["Design", "Web"],
     github: "https://github.com/hamida2004/devAddict",
     figma: "https://www.figma.com/design/mBi85XfZHT0Z4qXrh47US5/Dev-Addict?t=A7mEtrKMvbkycumo-0"
   },
   {
     id: 3,
-
     to: "https://www.figma.com/proto/RGlGYk7ZyUWce8r1qGVcjK/internship-project?node-id=22-3&node-type=frame&t=iGIkpXYJWCAbW0qK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A305&show-proto-sidebar=1",
     image: safeHome,
     name: "Safe Home",
-    type: "Design, Mobile",
+    type: ["Design", "Mobile"],
     github: "https://github.com/hamida2004/safe_home",
     figma: "https://www.figma.com/proto/RGlGYk7ZyUWce8r1qGVcjK/internship-project?node-id=0-1&fuid=1206169402777696177"
   },
@@ -39,17 +37,16 @@ export const projects = [
     to: "/studycase/bubbles",
     image: bubbles,
     name: "bubbles(chat app)",
-    type: "Design, Mobile",
+    type: ["Design", "Mobile"],
     github: "https://hamida2004.github.io/Portfolio/#/studycase/bubbles",
     figma: "https://www.figma.com/design/QKsrfPl3eWqfYhe8UP3UwN/bubbles?t=A7mEtrKMvbkycumo-0"
-
   },
   {
     id: 6,
     to: "/studycase/musalah",
     image: musalah,
     name: "Musalah",
-    type: "Design, Mobile",
+    type: ["Design", "Mobile"],
     github: "https://github.com/hamida2004/musalah",
     figma: "https://www.figma.com/design/MjqQHZ5PjDz7lfsk868igK/Musalah?t=A7mEtrKMvbkycumo-0"
   },
@@ -58,9 +55,8 @@ export const projects = [
     to: "/studycase/medhub",
     image: medhub,
     name: "Medhub",
-    type: "Design, web",
+    type: ["Design", "Web"],
     github: "https://github.com/hamida2004/medhub",
     figma: "https://www.figma.com/design/Dr3Bvq2OpMNDXhWlukxxe5/midhub?t=A7mEtrKMvbkycumo-0"
   },
-
 ];
