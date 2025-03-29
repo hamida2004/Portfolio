@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.61fd2757.css",
-    "main.js": "/Portfolio/static/js/main.acaa9c89.js",
+    "main.css": "/Portfolio/static/css/main.7732253c.css",
+    "main.js": "/Portfolio/static/js/main.f3ecbb4b.js",
     "static/media/MusalahCs.png": "/Portfolio/static/media/MusalahCs.cfae1b918c53bfac02f0.png",
     "static/media/bubblesCs.png": "/Portfolio/static/media/bubblesCs.72650fdd9979f0f22622.png",
     "static/media/musalah.png": "/Portfolio/static/media/musalah.c51830e3b9ca8e0c0053.png",
@@ -11,13 +11,14 @@
     "static/media/safia.jpg": "/Portfolio/static/media/safia.bf2f995bb5f27a8fe1ae.jpg",
     "static/media/medhub.png": "/Portfolio/static/media/medhub.b1dc59c0cacafa6755bc.png",
     "static/media/devAddict.png": "/Portfolio/static/media/devAddict.7b0d00ec009cd4b7534c.png",
+    "static/media/CV_hamida_DADDA.pdf": "/Portfolio/static/media/CV_hamida_DADDA.1e84e883324f98d31fce.pdf",
     "static/media/zinou.jpg": "/Portfolio/static/media/zinou.69e85f8fa04a87f67b6e.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.61fd2757.css.map": "/Portfolio/static/css/main.61fd2757.css.map",
-    "main.acaa9c89.js.map": "/Portfolio/static/js/main.acaa9c89.js.map"
+    "main.7732253c.css.map": "/Portfolio/static/css/main.7732253c.css.map",
+    "main.f3ecbb4b.js.map": "/Portfolio/static/js/main.f3ecbb4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.61fd2757.css",
-    "static/js/main.acaa9c89.js"
+    "static/css/main.7732253c.css",
+    "static/js/main.f3ecbb4b.js"
   ]
 }
