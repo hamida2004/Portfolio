@@ -25,6 +25,7 @@ const Div = () => {
   justify-content: space-between;
   margin-right: auto;
   width: 40%;
+  margin:20px 0px;
 
   @media (max-width: 768px) {
   width: 100%;
@@ -108,7 +109,7 @@ const Div = () => {
       padding-top: 40px;
     }
   `;
-  const iconStyle = { color: "rgb(43, 106, 252)", fontSize: 20 };
+  const iconStyle = { color: "#CBA135", fontSize: 20 };
 
   const scrollDown = () => {
     window.scrollTo({
@@ -170,13 +171,13 @@ const Div = () => {
         >
           <p
             style={{
-              color: "#2b6afc",
+              color: "#CBA135",
             }}
           >
             explore my work
           </p>
           {/* <IoChevronDownOutline size={40} color="rgba(43, 106, 252, 0.3)" /> */}
-          <Icon size={40} color="#2b6afc" />
+          <Icon size={40} color="#CBA135" />
         </Link>
       </Container>
     </>

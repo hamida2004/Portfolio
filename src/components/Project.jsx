@@ -37,7 +37,7 @@ function Project({ id, to, image, name, type, github, figma }) {
   `;
   const H2 = styled.h2`
     font-weight: 300;
-    color: #2b6afc;
+    color: #CBA135;
     font-size: 20px;
   `;
 

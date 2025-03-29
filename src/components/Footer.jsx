@@ -38,9 +38,13 @@ function Footer() {
     
 
     text-decoration: none;
-    color: rgb(43, 106, 252);
+    color: #CBA135;
     font-size: 1rem;
 
+    &:hover {
+    color: rgb(43, 106, 252);
+    font-weight: 400;
+    }
     `
     return (
         <Div>

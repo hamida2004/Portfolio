@@ -29,7 +29,7 @@ function About() {
       height: 0px;
       border-style: solid;
       border-width: 10px 20px 10px 0;
-      border-color: transparent #2b6afc transparent transparent;
+      border-color: transparent #CBA135 transparent transparent;
     }
   `;
   const EduRight = styled.div`
@@ -44,7 +44,7 @@ function About() {
       height: 0;
       border-style: solid;
       border-width: 10px 0 10px 20px;
-      border-color: transparent transparent transparent #2b6afc;
+      border-color: transparent transparent transparent #CBA135;
     }
   `;
   const H2 = styled.h2`
@@ -194,7 +194,7 @@ function About() {
           >
             <div
               style={{
-                backgroundColor: "#2b6afc",
+                backgroundColor: "#CBA135",
                 width: 4,
                 height: "100%",
                 borderRadius: 2,
