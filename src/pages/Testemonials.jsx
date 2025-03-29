@@ -28,7 +28,6 @@ const Testemonials = () => {
         margin: "120px 0px ",
         padding: "0px 80px",
         width: "100%",
-        height: "100vh",
       }}
     >
       <H1>Testemonials</H1>

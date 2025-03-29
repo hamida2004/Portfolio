@@ -10,6 +10,7 @@ import CaseStudy from "./pages/CaseStudy";
 import bubblesCs from "./assets/images/bubblesCs.png";
 import MusalahCs from "./assets/images/MusalahCs.png";
 import medhub from "./assets/images/medhub.png";
+import Footer from "./components/Footer";
 function App() {
   return (
     <HashRouter>
@@ -32,6 +33,7 @@ function App() {
           element={<CaseStudy image={medhub} id={7} />}
         />
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }

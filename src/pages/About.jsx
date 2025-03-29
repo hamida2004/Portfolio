@@ -1,5 +1,9 @@
-import { FaReact, FaJs,FaCss3,FaHtml5,FaGithub,FaFigma ,FaNodeJs} from "react-icons/fa";
 
+import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaReact, FaNodeJs ,FaFigma} from "react-icons/fa";
+import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaJava } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Rect from "../components/Rect";
@@ -8,8 +12,9 @@ function About() {
     font-weight: 500;
     display: inline-block;
     color: rgba(245, 254, 251, 0.9);
-    margin-bottom: 20px;
+    margin: 40px 0px;
   `;
+  const iconStyle = { color: "rgb(43, 106, 252)", fontSize: 40 };
 
   const EduLeft = styled.div`
     position: relative;
@@ -87,7 +92,7 @@ function About() {
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    gap: 80px;
+    gap: 20px;
     width: 60%;
     min-width: 240px;
     min-height: 30vh;
@@ -110,12 +115,11 @@ function About() {
   `;
   const Container = styled.div`
     width: 100%;
-    height: 100vh;
     padding: 120px 80px;
     display: flex;
     justify-content: start;
+    flex-direction: column;
     gap: 40px;
-    flex-wrap: wrap;
     position: relative;
     @media (max-width: 768px) {
       padding: 40px;
@@ -233,37 +237,24 @@ function About() {
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
-            width:'100%'
+            width:'100%',
+            gap: 40,
           }}
         >
-          <FaJs size={60}  color="yellow"    style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaReact size={60}  color="#2b6afc"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaNodeJs size={60}  color="green"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaGithub size={60}  color="grey"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaFigma size={60}  color="purple"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaCss3 size={60}  color="blue"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
-          <FaHtml5 size={60}  color="orange"  style={{
-            margin:20,
-            cursor:"pointer"
-          }}/>
+                   <FaHtml5 style={iconStyle} />
+                   <FaCss3Alt style={iconStyle} />
+                   <FaJs style={iconStyle} />
+                   <FaGitAlt style={iconStyle} />
+                   <FaReact style={iconStyle} />
+                   <FaNodeJs style={iconStyle} />
+                   <SiExpress style={iconStyle} />
+                   <SiMongodb style={iconStyle} />
+                   <SiMysql style={iconStyle} />
+                   <BiLogoSpringBoot  style={iconStyle}/>
+                   <FaJava  style={iconStyle} />
+                   <TbBrandReactNative  style={iconStyle}/>
+                   <FaFigma style={iconStyle} />
+         
         </div>
       </DivLeft>
 

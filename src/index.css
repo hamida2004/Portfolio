@@ -8,6 +8,10 @@ body {
   background-color: #04030B;
   overflow-x: hidden;
   color: rgb(245, 254, 251);
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 40px;
+  }
 }
 
 code {

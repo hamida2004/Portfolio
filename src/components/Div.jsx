@@ -2,6 +2,11 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaReact, FaNodeJs ,FaFigma} from "react-icons/fa";
+import { SiExpress, SiMongodb, SiMysql} from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaJava } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
 import Rect from "./Rect";
 const Div = () => {
   // Styled Component for the div
@@ -13,6 +18,18 @@ const Div = () => {
     
     }
     `;
+
+  const Tech = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  width: 40%;
+
+  @media (max-width: 768px) {
+  width: 100%;
+  }
+  `
   const SlideRight = keyframes`
     from{
       transform : translateX(-100%) translateY(40%);
@@ -91,6 +108,8 @@ const Div = () => {
       padding-top: 40px;
     }
   `;
+  const iconStyle = { color: "rgb(43, 106, 252)", fontSize: 20 };
+
   const scrollDown = () => {
     window.scrollTo({
       top: window.scrollY + 720, // Scrolls down 100px from the current scroll position
@@ -113,8 +132,25 @@ const Div = () => {
         >
           Full-stack developer | Problem-solver | UI/UX Enthusiast
         </H2>
+        <Tech>
+        <FaHtml5 style={iconStyle} />
+          <FaCss3Alt style={iconStyle} />
+          <FaJs style={iconStyle} />
+          <FaGitAlt style={iconStyle} />
+          <FaReact style={iconStyle} />
+          <FaNodeJs style={iconStyle} />
+          <SiExpress style={iconStyle} />
+          <SiMongodb style={iconStyle} />
+          <SiMysql style={iconStyle} />
+          <BiLogoSpringBoot  style={iconStyle}/>
+          <FaJava  style={iconStyle} />
+          <TbBrandReactNative  style={iconStyle}/>
+          <FaFigma style={iconStyle} />
+
+
+        </Tech>
         <H2
-       
+
         >
           web and mobile developer who loves turning ideas into functional,
           user-friendly apps and designs.
@@ -128,7 +164,7 @@ const Div = () => {
             marginLeft: "auto",
             marginRight: "auto",
             flexDirection: "column",
-            marginTop:80
+            marginTop: 80
           }}
           onClick={scrollDown}
         >
@@ -137,7 +173,7 @@ const Div = () => {
               color: "#2b6afc",
             }}
           >
-            let's collaborate
+            explore my work
           </p>
           {/* <IoChevronDownOutline size={40} color="rgba(43, 106, 252, 0.3)" /> */}
           <Icon size={40} color="#2b6afc" />
