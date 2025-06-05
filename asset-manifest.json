@@ -1,24 +1,28 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.7732253c.css",
-    "main.js": "/Portfolio/static/js/main.29eab488.js",
+    "main.js": "/Portfolio/static/js/main.0591cf9f.js",
     "static/media/MusalahCs.png": "/Portfolio/static/media/MusalahCs.cfae1b918c53bfac02f0.png",
     "static/media/bubblesCs.png": "/Portfolio/static/media/bubblesCs.72650fdd9979f0f22622.png",
+    "static/media/hamsa.png": "/Portfolio/static/media/hamsa.fa070f537c0727956d62.png",
+    "static/media/hamsa1.png": "/Portfolio/static/media/hamsa1.aabc651b47cf76e9c66b.png",
     "static/media/musalah.png": "/Portfolio/static/media/musalah.c51830e3b9ca8e0c0053.png",
     "static/media/safeHome.png": "/Portfolio/static/media/safeHome.84782dbbee1552bf3fb7.png",
+    "static/media/trabek.png": "/Portfolio/static/media/trabek.b46238ccad0336d327a8.png",
     "static/media/algposte.png": "/Portfolio/static/media/algposte.60248aa19856d27223c8.png",
     "static/media/bubbles.png": "/Portfolio/static/media/bubbles.763f7c21c81ace9293e0.png",
     "static/media/safia.jpg": "/Portfolio/static/media/safia.bf2f995bb5f27a8fe1ae.jpg",
     "static/media/medhub.png": "/Portfolio/static/media/medhub.b1dc59c0cacafa6755bc.png",
     "static/media/devAddict.png": "/Portfolio/static/media/devAddict.7b0d00ec009cd4b7534c.png",
     "static/media/CV_hamida_DADDA.pdf": "/Portfolio/static/media/CV_hamida_DADDA.1e84e883324f98d31fce.pdf",
+    "static/media/EcoSecure.PNG": "/Portfolio/static/media/EcoSecure.2ed9878254985e6e5dff.PNG",
     "static/media/zinou.jpg": "/Portfolio/static/media/zinou.69e85f8fa04a87f67b6e.jpg",
     "index.html": "/Portfolio/index.html",
     "main.7732253c.css.map": "/Portfolio/static/css/main.7732253c.css.map",
-    "main.29eab488.js.map": "/Portfolio/static/js/main.29eab488.js.map"
+    "main.0591cf9f.js.map": "/Portfolio/static/js/main.0591cf9f.js.map"
   },
   "entrypoints": [
     "static/css/main.7732253c.css",
-    "static/js/main.29eab488.js"
+    "static/js/main.0591cf9f.js"
   ]
 }
