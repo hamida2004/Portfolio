@@ -10,6 +10,9 @@ import CaseStudy from "./pages/CaseStudy";
 import bubblesCs from "./assets/images/bubblesCs.png";
 import MusalahCs from "./assets/images/MusalahCs.png";
 import medhub from "./assets/images/medhub.png";
+import hamsa from "./assets/images/hamsa1.png";
+import eco from "./assets/images/EcoSecure.PNG";
+import trabek from "./assets/images/trabek.png";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -31,6 +34,15 @@ function App() {
         <Route
           path="/studycase/medhub"
           element={<CaseStudy image={medhub} id={7} />}
+        /><Route
+          path="/studycase/hamsa"
+          element={<CaseStudy image={hamsa} id={9} />}
+        /><Route
+          path="/studycase/smart-infra"
+          element={<CaseStudy image={eco} id={8} />}
+        /><Route
+          path="/studycase/trabek"
+          element={<CaseStudy image={trabek} id={10} />}
         />
       </Routes>
       <Footer />

@@ -4,6 +4,9 @@ import bubbles from "../images/bubbles.png";
 import musalah from "../images/musalah.png";
 import algpost from "../images/algposte.png";
 import medhub from "../images/medhub.png";
+import eco from "../images/EcoSecure.PNG";
+import hamsa from "../images/hamsa.png";
+import trabek from "../images/trabek.png";
 export const projects = [
   {
     id: 1,
@@ -22,6 +25,14 @@ export const projects = [
     type: ["Design", "Web"],
     github: "https://github.com/hamida2004/devAddict",
     figma: "https://www.figma.com/design/mBi85XfZHT0Z4qXrh47US5/Dev-Addict?t=A7mEtrKMvbkycumo-0"
+  },
+  {
+    id: 8,
+    to: "/studycase/smart-infra",
+    image: eco,
+    name: "Smart Infra : energy and security manager",
+    type: ["Design", "Mobile"],
+    github: "https://hamida2004.github.io/nest_competition_front/#/dashboard",
   },
   {
     id: 3,
@@ -58,5 +69,22 @@ export const projects = [
     type: ["Design", "Web"],
     github: "https://github.com/hamida2004/medhub",
     figma: "https://www.figma.com/design/Dr3Bvq2OpMNDXhWlukxxe5/midhub?t=A7mEtrKMvbkycumo-0"
+  },
+  {
+    id: 7,
+    to: "/studycase/trabek",
+    image: trabek,
+    name: "Trabek",
+    type: ["Design", "Web", "Mobile"],
+    github: "https://github.com/hamida2004/trabek",
+    figma: "https://www.figma.com/design/q2O8SnKS8r5lHZvhJA0rCM/Untitled?node-id=0-1&p=f"
+  }, {
+    id: 8,
+    to: "/studycase/hamsa",
+    image: hamsa,
+    name: "HamSa",
+    type: ["Design", "Web"],
+    github: "https://github.com/hamida2004/hamsa",
+    figma: "https://www.figma.com/design/q2O8SnKS8r5lHZvhJA0rCM/Untitled?node-id=0-1&p=f"
   },
 ];
